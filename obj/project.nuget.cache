@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/2OKN/qAnU8tHMfn5dSjKdZwcCwvzJ1pPcM85h8h+UipieZMTzBiCj73wXXMHJjARAKDQQdTBMkwD14VLriuDQ==",
+  "dgSpecHash": "MSTJUuuqlLpbCHus3hpm6JqNmBANzfSdQ0Bq/2OG2nkzAGcxXucIl2mq9XA+a+P0guYAiCt9KcnGGFLeObs9bg==",
   "success": true,
-  "projectFilePath": "/Users/patrykleszner/ApiToDo/ApiToDo.csproj",
+  "projectFilePath": "/Users/patrykleszner/Documents/GitHub/ApiToDo/ApiToDo.csproj",
   "expectedPackageFiles": [
     "/Users/patrykleszner/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/patrykleszner/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

@@ -11,6 +11,7 @@ namespace ApiToDo.Repositories
         IEnumerable<ToDo> GetItems();
     
         void CreateToDo(ToDo item);
+        void UpdateToDo(ToDo item);
     }
 
 }

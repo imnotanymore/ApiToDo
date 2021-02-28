@@ -1,10 +1,9 @@
 using System;
 
-namespace ApiToDo.Models
+namespace ApiToDo.DTOs
 {
-    public record ToDo
+    public record UpdateToDoDTO
     {
-        public Guid Id { get; set; }
 
         public string Name { get; set; }
 

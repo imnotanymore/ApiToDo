@@ -4,6 +4,7 @@ using ApiToDo.Models;
 using ApiToDo.Repositories;
 using System.Linq;
 using ApiToDo.DTOs;
+using System;
 
 namespace ApiToDo.Controllers
 {
@@ -24,7 +25,52 @@ namespace ApiToDo.Controllers
             var items = repository.GetItems().Select( item => item.AsDto()); 
             return items;
         }
-    
-    
+        [HttpGet("{id}")]
+        public ActionResult<ToDoDTOs> GetItem(Guid id)
+        {
+            var item = repository.GetItem(id);
+
+            if (item is null)
+            {
+                return NotFound();
+            }
+
+            return item.AsDto();
+        }
+        [HttpPost]
+        public ActionResult<ToDoDTOs> CreateToDo(CreateToDoDTO ToDoDTOs)
+        {
+             ToDo item = new()
+             {
+                Id = Guid.NewGuid(),
+                Name = ToDoDTOs.Name,
+                IsComplete = false
+
+             };
+
+             repository.CreateToDo(item);
+
+             return CreatedAtAction(nameof(GetItems), new { id = item.Id}, item.AsDto());
+        }
+        [HttpPut("{id}")]
+        public ActionResult UpdateToDo(Guid id, UpdateToDoDTO ToDoDTO)
+        {
+            var existingItem = repository.GetItem(id);
+
+            if (existingItem is null)
+            {
+                return NotFound();
+            }
+
+            ToDo UpdatedToDo = existingItem with
+            {
+                Name = ToDoDTO.Name,
+                IsComplete = true
+            };
+
+            repository.UpdateToDo(UpdatedToDo);
+            
+            return NoContent();
+        }
     }
 }

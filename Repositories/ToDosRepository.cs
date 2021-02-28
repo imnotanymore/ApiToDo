@@ -27,6 +27,10 @@ namespace ApiToDo.Repositories
         {
             items.Add(item);
         }
-
+        public void UpdateToDo(ToDo item)       
+        {
+            var index = items.FindIndex(existingItem => existingItem.Id == item.Id);
+            items[index] = item;
+        }
     }
 }

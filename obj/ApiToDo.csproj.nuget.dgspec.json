@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/patrykleszner/ApiToDo/ApiToDo.csproj": {}
+    "/Users/patrykleszner/Documents/GitHub/ApiToDo/ApiToDo.csproj": {}
   },
   "projects": {
-    "/Users/patrykleszner/ApiToDo/ApiToDo.csproj": {
+    "/Users/patrykleszner/Documents/GitHub/ApiToDo/ApiToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/patrykleszner/ApiToDo/ApiToDo.csproj",
+        "projectUniqueName": "/Users/patrykleszner/Documents/GitHub/ApiToDo/ApiToDo.csproj",
         "projectName": "ApiToDo",
-        "projectPath": "/Users/patrykleszner/ApiToDo/ApiToDo.csproj",
+        "projectPath": "/Users/patrykleszner/Documents/GitHub/ApiToDo/ApiToDo.csproj",
         "packagesPath": "/Users/patrykleszner/.nuget/packages/",
-        "outputPath": "/Users/patrykleszner/ApiToDo/obj/",
+        "outputPath": "/Users/patrykleszner/Documents/GitHub/ApiToDo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/patrykleszner/.nuget/NuGet/NuGet.Config"

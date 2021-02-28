@@ -72,5 +72,19 @@ namespace ApiToDo.Controllers
             
             return NoContent();
         }
+        [HttpDelete("{id}")]
+        public ActionResult DeleteItem(Guid id)
+        {
+             var existingItem = repository.GetItem(id);
+
+            if (existingItem is null)
+            {
+                return NotFound();
+            }
+
+            repository.DeleteItem(id);
+
+            return NoContent();
+        }
     }
 }

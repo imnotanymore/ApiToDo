@@ -12,6 +12,8 @@ namespace ApiToDo.Repositories
     
         void CreateToDo(ToDo item);
         void UpdateToDo(ToDo item);
+
+        void DeleteItem(Guid id);
     }
 
 }
